@@ -62,7 +62,7 @@ class Cookiebot extends Base {
       $command = sprintf(
         'cd %s && cat %s | ./vendor/bin/drush --config="drush" --yes config:set --input-format="yaml" %s "?" - 2>&1',
         // @todo Get the project root.
-        escapeshellarg('/home/andor/Documents/Composer/vendor/anrt-client/griffith-college-d9'),
+        escapeshellarg('..'),
         // @todo Get config dir.
         escapeshellarg("./config/sync/$configName.yml"),
         escapeshellarg($configName),
